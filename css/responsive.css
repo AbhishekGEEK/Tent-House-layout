@@ -1,0 +1,132 @@
+@media (max-width:43.75em){
+    .navbar-icons{
+        display: block;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        /* display: none; */
+        height: 50vh;
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        background-color: var(--main_color);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.5s linear;
+
+        border-bottom: 2px solid #aa0957fd;
+        border-radius: 30px;
+    
+    }
+
+    .active .navbar{
+        top: 0;
+        transition: all 0.5s linear;
+    }
+    .active .menu{
+        display: none;
+    }
+    .active .close{
+        display: block;
+    }
+}
+
+
+@media (max-width:31em){
+    .logo{
+        width: 15rem;
+        height: 6rem;
+    }
+}
+
+/* width = 910px */
+@media (max-width:57em) {
+    .counter-section-report .container{
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    }
+}
+
+/* width = 750px  */
+@media (max-width:47em){
+    html{
+        font-size: 52.5%;
+    }
+
+   
+}
+
+/* width = 650px  */
+@media (max-width:41em){
+    .hero-section-data .second{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .counter-section-report .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-section .container{
+        grid-template-columns:1fr; 
+        gap: 5rem;
+    }
+    
+}
+
+/* width = 450px  */
+@media (max-width:29em){
+    .hero-section-data .second{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .container{
+        padding: 0 3rem;
+    }
+    .swiper-for-center p::after{
+        bottom: -4rem;
+        right: 0rem;
+        font-size: 3rem;
+    }
+    .swiper-for-center p::before{
+        font-size: 3rem;
+        top: -2rem;
+    }
+    .swiper-for-center p{
+        font-size: 1.6rem;
+        margin:8rem auto; 
+    }
+    .client-details{
+        font-size: 1.6rem;
+        right: 10rem;
+        bottom: 12rem;
+    }
+    .swiper-section-heading .section-heading{
+        font-size: 4rem;
+        white-space: nowrap;
+    }
+    .swiper-section-heading .section-heading::before{
+        width: 30rem;
+    }
+    .swiper-button-prev.nextbtn::after,
+    .swiper-button-next.nextbtn::after{
+        font-size: 3rem;
+    }
+}
+/* 500px  */
+@media (max-width:32em){
+    .f-links{
+        display: none;
+    }
+    .f-doubt{
+        display: none;
+    }
+    .footer-section .container{
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+}
